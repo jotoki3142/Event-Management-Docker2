@@ -75,7 +75,7 @@ export default function Header() {
                     <li><Link href="/">Trang chủ</Link></li>
                     <li><Link href="/sukien">Sự Kiện Joe Mama</Link></li>
                     <li><Link href="/about">Giới thiệu</Link></li>
-                    <li><Link href="/lienhe">Liên hệ</Link></li>
+                    <li><Link href="/lienhe">Contact</Link></li>
                 </ul>
                 </nav>
 
