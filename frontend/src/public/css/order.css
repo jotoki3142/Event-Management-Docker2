@@ -1,0 +1,132 @@
+.orders-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .orders-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .order-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .order-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .order-info {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .order-toggle {
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .order-details {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+  }
+  
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+
+  .pagination button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 0 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    max-width: 105px;
+  }
+  
+  .badge.chua-thanh-toan {
+    background-color: #ffc107; /* yellow */
+  }
+  
+  .badge.da-thanh-toan {
+    background-color: #28a745; /* green */
+  }
+  
+  .badge.da-huy {
+    background-color: #dc3545; /* red */
+  }
+  

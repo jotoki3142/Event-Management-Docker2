@@ -1,0 +1,495 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* Slider Styles */
+/* ===============================
+   HERO SLIDER STYLE( thanh bander quảng cÁO)
+   =============================== */
+.hero-slider-section,
+.hero-slider-active,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hero-slider-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cta-button {
+  background-color: #66b6e8;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s ease;
+  opacity: 0.85; /* ✅ 85% độ trong suốt */
+
+}
+
+.cta-button:hover {
+  background-color: #657f9b;
+}
+
+/* Main Content */
+main {
+  padding: 30px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng cho box-shadow */
+  border: 2px solid transparent; /* Viền trong suốt ban đầu */
+  border-radius: 8px; /* Bo góc nhẹ */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Hiệu ứng viền vàng nhẹ */
+  border-color: rgba(255, 215, 0, 0.7); /* Viền vàng khi hover */
+}
+
+.feature-icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  .main-menu {
+    margin: 15px 0;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .slide-content {
+    left: 20px;
+    bottom: 20px;
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+/*----------------------/
+/*cau hỏi trang index*/
+.faq_area {
+    padding: 60px 0;
+    background-color: #ffffff; /* nền nhẹ cho vùng FAQ */
+    margin-top: 40px;
+}
+
+.serction_title_large h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+#accordion .card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#accordion .card-header {
+    background-color: #daecf3;
+    padding: 0;
+}
+
+#accordion .card-header h5 {
+    margin: 0;
+}
+
+#accordion .card-header button {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none; /* không gạch chân */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#accordion .card-header button:hover {
+    text-decoration: underline; /* gạch chân khi hover */
+    background-color: #f1f1f1;
+}
+
+#accordion .card-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#accordion .card-body {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+#accordion .collapse {
+    display: none;
+}
+
+#accordion .collapse.show {
+    display: block;
+}
+
+/*SỰ KIỆN NỔI BẬT*/
+/* === SỰ KIỆN NỔI BẬT - ĐÃ LÀM LẠI === */
+/* Khối tổng sự kiện */
+.event-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  max-width: 12000x;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Tiêu đề */
+.featured-events h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+/* Lưới sự kiện */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Thẻ sự kiện */
+.event-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ảnh sự kiện */
+.event-image {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.event-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Nội dung sự kiện */
+.event-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #ccdef2;
+}
+
+.event-meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.event-title {
+  font-size: 20px;
+  color: #222;
+  margin: 8px 0;
+}
+
+.event-location {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.event-desc {
+  font-size: 14px;
+  color: #444;
+  flex: 1;
+}
+
+/* Footer chứa giá & nút */
+.event-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* fallback cho mobile nếu quá hẹp */
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.event-price {
+  font-weight: bold;
+  color: #000;
+  flex: 1;
+}
+
+/* Nút */
+.btn-detail,
+.btn-register {
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+/* Nút chi tiết */
+.btn-detail {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Nút đăng ký */
+.btn-register {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Hover */
+.btn-detail:hover {
+  background-color: #5a6268;
+}
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive nhỏ hơn 400px thì co nút lại */
+@media (max-width: 400px) {
+  .btn-detail,
+  .btn-register {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+/*HẾT PHẦN SỰ KIỆN NỔI BẬT*/
+
+/*DIỄN GIẢ NỔI BẬT*/
+/* Vùng tổng */
+.team-wrapper {
+  padding: 40px 20px;
+  background: #f6f6f6;
+  overflow-x: auto;
+}
+
+/* Dòng chứa tất cả diễn giả */
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Nếu không muốn wrap thì dùng: nowrap */
+}
+
+/* Card từng người */
+.team-single {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 25px 20px 30px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.team-single:hover {
+  transform: translateY(-5px);
+}
+
+/* Ảnh tròn */
+.team-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom ảnh nhẹ khi hover */
+.team-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Tên */
+.team-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #000;
+}
+
+/* Chức danh (ẩn khi hover) */
+.team-title {
+  display: block;
+  color: #777;
+  font-size: 15px;
+  margin-top: 5px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.team-single:hover .team-title {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Mạng xã hội (ẩn mặc định) */
+.team-social {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-single:hover .team-social {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Từng icon */
+.team-social li {
+  display: inline-block;
+  margin: 0 6px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.team-single:hover .team-social li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Icon link */
+.team-social a {
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.team-social a:hover {
+  color: #b19361;
+}
+
+/* Tiêu đề vùng */
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+

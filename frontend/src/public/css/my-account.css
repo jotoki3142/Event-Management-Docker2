@@ -1,0 +1,225 @@
+.account-container  {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item.active {
+  background-color: #70b5ca;
+  color: #fff;
+}
+
+/* Nội dung chính */
+.content {
+  flex: 1;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+/* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  width: 100%;
+  outline: none;
+}
+
+input:focus {
+  border-color: #b59865;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+/* Custom dropdown giới tính */
+.custom-select {
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+
+.selected-option {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.selected-option .arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #666;
+}
+
+.options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  z-index: 10;
+}
+
+.options .option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options .option:hover {
+  background: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .account-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+/* Nút đỏi mật khẩu */
+.btn-change-password {
+  background-color: #7e9fc2;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.btn-change-password:hover {
+  background-color: #15191d;
+  transform: translateY(-2px);
+}
+
+/* Nút đăng xuất */
+.btn-logout {
+  background-color: #7e9fc2;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(220, 53, 69, 0.2);
+}
+
+.btn-logout:hover {
+  background-color: #15191d;
+ transform: translateY(-2px);
+}
+
+.btn-deactivate {
+  background-color: #e53e3e;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.btn-deactivate:hover {
+  background-color: #c53030;
+}

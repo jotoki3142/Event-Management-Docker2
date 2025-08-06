@@ -1,0 +1,219 @@
+
+.event-listing-container .event-flex {
+  display: flex;
+  gap: 30px;
+
+}
+.event-sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 30px;
+  
+}
+.event-sidebar h3 {
+margin-top: 24px;
+margin-bottom: 8px;
+font-size: 18px;
+}
+.event-categories {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.event-categories li {
+  margin: 6px 0;
+}
+.event-categories a {
+  text-decoration: none;
+  color: #333;
+}
+.event-categories a:hover {
+  color: #007bff;
+}
+.event-grid {
+flex: 1;                 /* Chiếm hết phần còn lại */
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 25px;
+padding-right: 20px;
+box-sizing: border-box;
+}
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.event-card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.event-image {
+width: 100%;
+height: 180px;
+overflow: hidden;
+}
+
+.event-image img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* ✅ Tự phóng to/thu nhỏ, không để khoảng trắng */
+display: block;
+}
+
+.event-info {
+  padding: 15px;
+}
+.event-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.event-meta,
+.event-location,
+.event-price {
+  font-size: 14px;
+  color: #666;
+}
+.event-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-detail,
+.btn-register {
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: white;
+}
+.btn-detail {
+  background: #007bff;
+}
+.btn-register {
+  background: #28a745;
+}
+/*===Tìm kiếm sự kiện theo thành phố*/
+.event-sidebar select {
+width: 100%;
+padding: 8px 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 15px;
+background-color: #fff;
+color: #333;
+transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.event-sidebar select:focus {
+border-color: #007bff;
+box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+outline: none;
+}
+
+/*================*/
+/* phần chuyển trang 1,2,3,... */
+    .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.pagination button {
+  background: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.pagination button.active {
+  background: #007bff;
+  color: white;
+}
+
+.event-sidebar {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.event-categories {
+  max-height: 300px; /* Adjust based on design */
+  overflow-y: auto;
+  padding-right: 4px; /* for scrollbar gap */
+}
+
+/* Optional: nice-looking scrollbar */
+.event-categories::-webkit-scrollbar {
+  width: 6px;
+}
+.event-categories::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.event-page {
+  padding: 1rem;
+}
+.event-layout {
+  display: flex;
+  gap: 1rem;
+}
+.event-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.event-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.event-info {
+  padding: 1rem;
+}
+.event-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.event-footer {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0070f3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+.active-filter {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0070f3;
+}
